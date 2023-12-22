@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Pronostico del clima</title>
+    <link rel="stylesheet" href="styl.css">
+  </head>
+  <body>
+    <header>
+      <h1>Weather forecast</h1>
+      <div class="header-content">
+        <input type="text"   class="inputCity"  id="inputCity" placeholder="Escribe tu ubicación">
+        <button class="btnSearch"  id="btnSearch">Buscar</button>
+      </div>
+    </header>
+    <main>
+      <section class="pronosticoAcutual">
+        <div  class="cont-pronosticoAcutual">
+          <div class="cont-pronosticoAcutual-name"> 
+            <p id="city"></p>
+            <p  id="nameCountry"></p>
+          </div>  
+          <div class="img">
+            <h5 id="tiempo"></h5>  
+            <div class="nubes">
+              <img src="" alt="" >
+              <p id="temp" class="temp"></p>
+              <p id="grado"> </p> 
+              <div class="img-descrip">
+                <p  id="descrip"> </p>
+                <p  id="termica"></p>
+              </div>
+            </div>
+            <div  class="description">
+              <p id="wind"></p>  
+              <p   class="descrip"  id="pressure"></p>
+              <p  class="descrip"  id="visibility"></p>
+              <p   class="descrip" id="humidity"></p>
+            </div>
+          </div>
+
+          <!-- Pronosticos de horas y dias siguientes -->
+
+          <p id="days0"></p>
+          <div class="forecast">
+           <!--  <div class="forecast-img image">
+              <p  class="fecha"  id="fecha0"></p>
+              <div class="forecast-img0">
+                <img   id="img0" src="" alt="" >
+                <p id="temp0" ></p>
+              </div>
+              <p id="descrip0"> </p>
+              <div class="forecast-img0-description">
+                <p id="termica0"></p>
+                <p id="humidity0"></p>
+              </div>
+            </div>
+            <div class="forecast-img image">
+              <p class="fecha" id="fecha1"></p>
+              <div class="forecast-img0">
+                <img id="img1" src="" alt="" >
+                <p id="temp1" ></p>
+              </div>
+              <p id="descrip1"> </p>
+              <div class="forecast-img0-description">
+                <p id="termica1"></p>
+                <p id="humidity1"></p>
+              </div>
+            </div>  --> 
+            <div class="forecast-img image">
+              <p class="fecha" id="fecha2"></p>
+              <div class="forecast-img0">
+                <img id="img2" src="" alt="" >
+                <p id="temp2" ></p>
+              </div>
+              <p id="descrip2"> </p>
+              <div class="forecast-img0-description">
+                <p id="termica2"></p>
+                <p id="humidity2"></p>
+              </div>
+            </div>
+            <div class="forecast-img image">
+              <p class="fecha" id="fecha3"></p>
+              <div class="forecast-img0">
+                <img id="img3" src="" alt="" >
+                <p id="temp3" ></p>
+              </div>
+              <p id="descrip3"> </p>
+              <div class="forecast-img0-description">
+                <p id="termica3"></p>
+                <p id="humidity3"></p>
+              </div>
+            </div>
+
+            <div class="forecast-img image">
+              <p class="fecha" id="fecha4"></p>
+              <div class="forecast-img0">
+                <img id="img4" src="" alt="" >
+                <p id="temp4" ></p>
+              </div>
+              <p id="descrip4"> </p>
+              <div class="forecast-img0-description">
+                <p id="termica4"></p>
+                <p id="humidity4"></p>
+              </div>
+            </div>
+
+
+            <div class="forecast-img image">
+              <p class="fecha" id="fecha5"></p>
+              <div class="forecast-img0">
+                <img id="img5" src="" alt="" >
+                <p id="temp5" ></p>
+              </div>
+              <p id="descrip5"> </p>
+              <div class="forecast-img0-description">
+                <p id="termica5"></p>
+                <p id="humidity5"></p>
+              </div>
+            </div>
+
+            <div class="forecast-img image">
+              <p class="fecha" id="fecha6"></p>
+              <div class="forecast-img0">
+                <img id="img6" src="" alt="" >
+                <p id="temp6" ></p>
+              </div>
+              <p id="descrip6"> </p>
+              <div class="forecast-img0-description">
+                <p id="termica6"></p>
+                <p id="humidity6"></p>
+              </div>
+            </div>
+
+
+
+            
+
+
+
+
+          </div>
+          
+        </div>
+      </section>
+    
+
+
+
+
+    </main>
+
+
+
+
+
+  <!-- <div class="lds-roller none" ><div></div><div></div><div></div><div> -->
+
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+  </body>
+</html>
